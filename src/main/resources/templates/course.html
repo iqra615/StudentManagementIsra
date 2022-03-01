@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <link rel="stylesheet" 
+						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+   						crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Isra University</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+     
+      
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/students}">Candidate List </a>
+     
+      </li> 
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/course}">Courses </a>
+     
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/apply}">Apply Online </a>
+     
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/covid}">Covid-19 </a>
+     
+      </li> 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+       
+      
+    </ul>
+  </div>
+</nav>
+		
+
+
+
+
+<div>
+	<h2 >Course Creation</h2>
+
+	   
+</div>
+	
+	</tr>
+
+	<div class="col-sm-8" align = "center">
+        <div class="panel-body" align = "center" >
+                 
+                 
+  	<table class="table">
+ 	<thead class="thead-dark">
+        <tr>
+      	     <th>Course ID</th>
+            <th>Course Name</th>
+            <th>Duration</th>
+             <th>edit</th>
+             <th>delete</th>
+   	</tr>
+  </thead>
+  <tbody>
+      <tr  th:each="course : ${listcourse}">
+		<td th:text="${id}">Course ID</td>
+		<td th:text="${course.coursename}">Course Name</td>
+		<td th:text="${course.duration}">Duration</td>
+		
+		
+		
+		<td>
+				<a th:href = "@{/course/edit/{id}(id=${id})}"
+				class= "btn btn-primary">Update</a>
+				
+					<a th:href = "@{/course/{id}(id=${id})}"
+				class= "btn btn-danger">Delete</a>
+			
+			</td>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+									    
+				    
+		</tr> 
+  </tbody>
+  </table>                 
+</div>
+</div> 
+
+</tr>
+</tbody>			
+			
+</table>
+
+<div class = "row">
+		<div class = "col-lg-3">
+		<a th:href = "@{/addcourse}" class = "btn btn-primary btn-sm mb-3">Add Course</a> 
+		</div>
+		
+		</div>
+</body>
+</html>

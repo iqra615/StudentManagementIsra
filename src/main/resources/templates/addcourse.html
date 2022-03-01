@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Course</title>
+ <link rel="stylesheet" 
+						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+   						crossorigin="anonymous">
+</head>
+
+
+
+
+
+
+<style>
+ .green{background-color: green}
+ .red{background-color: red}
+</style>
+
+
+
+
+
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Isra University</a>
+ 
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+     
+      
+      
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/students}">Candidate List </a>
+     
+      </li> 
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/course}">Courses </a>
+     
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/apply}">Apply Online </a>
+     
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/covid}">Covid-19 </a>
+     
+      </li> 
+    </ul>
+  </div>
+</nav> <br> <br>
+
+									<div class="container">
+									<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+                              <div align="center">
+                            
+                               <h1>Create New Course</h1>
+                                  <br/>
+                               <div class="col-sm-9">
+                               <form action="#"
+                                th:action="@{/Course/save}" 
+                                th:object="${course}" 
+                                method="post">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                  <div alight="left">
+            <tr>
+                <label class="form-label">Course ID</label>
+                <td>
+	                <input type="hidden"
+	                 th:field="*{id}" />
+	                <input type="text" 
+	                th:field="*{id}"
+	                 class="form-control"
+	                 placeholder="Enter Here"
+	                 name="id" />
+                </td>
+            </tr>
+         </div> 
+                                
+  
+         
+                      <div alight="left">
+            <tr>
+                <label class="form-label">Course Name</label>
+                <td>
+	                <input type="hidden"
+	                 th:field="*{id}" />
+	                <input type="text" 
+	                th:field="*{coursename}"
+	                 class="form-control"
+	                 placeholder="Enter Here"
+	                 name="coursename" />
+                </td>
+            </tr>
+         </div> 
+         
+                                      <div alight="left">
+                                         <tr>
+                                       <label class="form-label" >Duration</label>
+                
+            <td>
+                 <input type="text"
+                  th:field="*{duration}"
+                   class="form-control" 
+                   placeholder="Duration" />
+                </td>
+            </tr>
+         </div>  <br>
+<div>
+            <tr>
+            <button type="submit" class="btn btn-info">Save</button> </td>
+            </tr>
+
+</div>
+ </form>
+</div>
+</body>
+</html>

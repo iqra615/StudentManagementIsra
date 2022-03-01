@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Isra University</title>
+<link rel="stylesheet" 
+						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+   						crossorigin="anonymous">
+</head>
+<body>
+
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Isra University</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/students}">Candidate List </a>
+     
+      </li> 
+      
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/course}">Courses </a>
+     
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/course}">Apply Online </a>
+     
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/covid}">Covid-19 </a>
+     
+      </li> 
+      
+      
+      
+    </ul>
+  </div>
+</nav>
+		
+<div class ="container">
+		<div class = "row"></div>
+		
+		</div>
+		
+		
+		
+		<table class = "table table-striped table-bordered">
+		<thead class = "table-dark">
+		<tr>
+			<th>Name</th>
+			<th> Father Name</th>
+			<th> Surname</th>
+			<th>Email</th>
+			<th> PlaceOfBirth</th>
+			<th> gender</th>
+			<th> nationality</th>
+			<th> telephone</th>
+			<th> Mobile</th>
+			<th> Email</th>
+			<th> presentAddress</th>
+			<th> parmanentAddress</th>
+			<th> appliedFor</th>
+			<th>Actions</th>
+		
+		</tr>
+		</thead>
+		<tbody>
+			<tr th:each = "apply: ${apply}">
+			<td th:text = "${apply.name}"></td>
+			<td th:text = "${apply.f_Name}"></td>
+			<td th:text = "${apply.surname}"></td>
+			<td th:text = "${apply.DateOfBirth}"></td>
+			<td th:text = "${apply.PlaceOfBirth}"></td>
+			<td th:text = "${apply.gender}"></td>
+			<td th:text = "${apply.nationality}"></td>
+			<td th:text = "${apply.telephone}"></td>
+			<td th:text = "${apply.mobile}"></td>
+			<td th:text = "${apply.domicile}"></td>
+			<td th:text = "${apply.email}"></td>
+			<td th:text = "${apply.presentAddress}">
+			<td th:text = "${apply.parmanentAddress}">
+			<td th:text = "${apply.appliedFor}">
+			
+			<td>
+				<a th:href = "@{/students/edit/{id}(id=${student.id})}"
+				class= "btn btn-primary">Update</a>
+				
+					<a th:href = "@{/students/{id}(id=${student.id})}"
+				class= "btn btn-danger">Delete</a>
+			
+			</td>
+		</tr>
+		</tbody>
+		
+		</table>
+		
+		
+		
+		<div class = "row">
+		<div class = "col-lg-3">
+		<a th:href = "@{/apply/new}" class = "btn btn-primary btn-sm mb-3">Apply Now</a> 
+		</div>
+		
+		</div>
+
+</body>
+</html>
