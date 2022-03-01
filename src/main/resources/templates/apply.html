@@ -82,6 +82,7 @@
 		</thead>
 		<tbody>
 			<tr th:each = "apply: ${apply}">
+			
 			<td th:text = "${apply.name}"></td>
 			<td th:text = "${apply.f_Name}"></td>
 			<td th:text = "${apply.surname}"></td>
@@ -98,10 +99,10 @@
 			<td th:text = "${apply.appliedFor}">
 			
 			<td>
-				<a th:href = "@{/students/edit/{id}(id=${student.id})}"
+				<a th:href = "@{/apply/edit/{id}(id=${apply.id})}"
 				class= "btn btn-primary">Update</a>
 				
-					<a th:href = "@{/students/{id}(id=${student.id})}"
+					<a th:href = "@{/apply/{id}(id=${apply.id})}"
 				class= "btn btn-danger">Delete</a>
 			
 			</td>

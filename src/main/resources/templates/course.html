@@ -100,10 +100,10 @@
 		
 		
 		<td>
-				<a th:href = "@{/course/edit/{id}(id=${id})}"
+				<a th:href = "@{/course/edit/{id}(id=${course.id})}"
 				class= "btn btn-primary">Update</a>
 				
-					<a th:href = "@{/course/{id}(id=${id})}"
+					<a th:href = "@{/course/{id}(id=${course.id})}"
 				class= "btn btn-danger">Delete</a>
 			
 			</td>

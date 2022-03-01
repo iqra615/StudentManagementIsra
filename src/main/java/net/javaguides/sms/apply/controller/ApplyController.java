@@ -73,7 +73,7 @@ public class ApplyController {
 	public String updateApply(@PathVariable Long id, @ModelAttribute("apply") Apply apply,
 			Model model) {
 		
-		//get student from database id
+		//get apply Fields from database id
 		Apply existingApply = applyService.getApplyById(id);
 		existingApply.setId(id);
 		existingApply.setName(apply.getName());
@@ -93,13 +93,13 @@ public class ApplyController {
 		
 		
 		
-		//save update student object
+		//save update Apply object
 		applyService.updateApply(existingApply);
 		return "redirect:/apply";
 		
 	}
 	
-	// handler method to handle delete student request
+	// handler method to handle delete apply request
 	
 	@GetMapping("/apply/{id}")
 	public String deleteApply(@PathVariable Long id) {

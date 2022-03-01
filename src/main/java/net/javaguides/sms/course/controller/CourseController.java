@@ -28,7 +28,7 @@ public class CourseController {
 	
 	
 	
-	//handler method to handle list students and return mode and view
+	//handler method to handle list course and return mode and view
 	@GetMapping("/course")
 	public String listCourse(Model model) {
 		model.addAttribute("course",courseService.getAllCourse());
@@ -88,7 +88,7 @@ public class CourseController {
 	public String updateCourse(@PathVariable Long id, @ModelAttribute("course") Course course,
 			Model model) {
 		
-		//get student from database id
+		//get course from database id
 		Course existingCourse =  courseService.getCourseById(id);
 		existingCourse.setId(id);
 		existingCourse.setCoursename(course.getCoursename());
@@ -106,7 +106,7 @@ public class CourseController {
 	
 	
 	
-	// handler method to handle delete student request
+	// handler method to handle delete course request
 	
 	@GetMapping("/course/{id}")
 	public String deleteCourse(@PathVariable Long id) {
