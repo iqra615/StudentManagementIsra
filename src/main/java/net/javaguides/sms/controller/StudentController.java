@@ -93,12 +93,7 @@ public class StudentController {
 	}
 	
 	
-	
-	
-	@RequestMapping("/")
-	public String home() {
-		return "home";
-	}
+
 	
 	
 	

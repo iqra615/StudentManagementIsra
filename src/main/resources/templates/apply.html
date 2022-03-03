@@ -46,12 +46,62 @@
         <a class="nav-link" th:href="@{/covid}">Covid-19 </a>
      
       </li> 
+
       
       
       
     </ul>
   </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+<h1>Registered Candidates</h1>
+
+
+
+
+
+
+
+<div class = "row">
+		<div class = "col-lg-3">
+		<a th:href = "@{/apply/new}" class = "btn btn-primary btn-sm mb-3" >Apply Now</a> 
+		</div>
+		
+		</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+									<div class="col-lg-9 col-md-6 col-sm-6 container justify-content-center card">
+                              <div align="left"> <br>
+
+
+
+
+
+
+
+
+
+
+
+
 		
 <div class ="container">
 		<div class = "row"></div>
@@ -59,66 +109,55 @@
 		</div>
 		
 		
-		
-		<table class = "table table-striped table-bordered">
-		<thead class = "table-dark">
-		<tr>
-			<th>Name</th>
-			<th> Father Name</th>
-			<th> Surname</th>
-			<th>Email</th>
-			<th> PlaceOfBirth</th>
-			<th> gender</th>
-			<th> nationality</th>
-			<th> telephone</th>
-			<th> Mobile</th>
-			<th> Email</th>
-			<th> presentAddress</th>
-			<th> parmanentAddress</th>
-			<th> appliedFor</th>
-			<th>Actions</th>
-		
 		</tr>
 		</thead>
 		<tbody>
+		
+
 			<tr th:each = "apply: ${apply}">
-			
-			<td th:text = "${apply.name}"></td>
-			<td th:text = "${apply.f_Name}"></td>
-			<td th:text = "${apply.surname}"></td>
-			<td th:text = "${apply.DateOfBirth}"></td>
-			<td th:text = "${apply.PlaceOfBirth}"></td>
-			<td th:text = "${apply.gender}"></td>
-			<td th:text = "${apply.nationality}"></td>
-			<td th:text = "${apply.telephone}"></td>
-			<td th:text = "${apply.mobile}"></td>
-			<td th:text = "${apply.domicile}"></td>
-			<td th:text = "${apply.email}"></td>
-			<td th:text = "${apply.presentAddress}">
-			<td th:text = "${apply.parmanentAddress}">
-			<td th:text = "${apply.appliedFor}">
-			
+			<td><b>Name: </b></td>
+			<td th:text = "${apply.name}"></td><br>
+			<td><b>Father Name:</b></td>
+			<td th:text = "${apply.f_Name}"></td><br>
+			<td><b>Surname:</b></td>
+			<td th:text = "${apply.surname}"></td><br>
+			<td><b>Email:</b></td>
+			<td th:text = "${apply.email}"></td><br>
+			<td><b>Place of Birth</b></td>
+			<td th:text = "${apply.PlaceOfBirth}"></td><br>
+			<td><b>Gender:</b></td>
+			<td th:text = "${apply.gender}"></td><br>
+			<td><b>Nationality:</b></td>
+			<td th:text = "${apply.nationality}"></td><br>
+			<td><b>Telephone:</b></td>
+			<td th:text = "${apply.telephone}"></td><br>
+			<td><b>Mobile:</b></td>
+			<td th:text = "${apply.mobile}"></td><br>
+			<td><b>Date of Birth:</b></td>
+			<td th:text = "${apply.DateOfBirth}"></td><br>
+			<td><b>Present Address</b></td>
+			<td th:text = "${apply.presentAddress}"></td><br>
+			<td><b>Permanent Address:</b></td>
+			<td th:text = "${apply.parmanentAddress}"></td><br>
+			<td><b>Domicile</b></td>
+	        <td th:text = "${apply.domicile}"></td><br>
+			<td><b>Applied For:</b></td>
+			<td th:text = "${apply.appliedFor}"></td><br><br>
+		
 			<td>
 				<a th:href = "@{/apply/edit/{id}(id=${apply.id})}"
 				class= "btn btn-primary">Update</a>
 				
 					<a th:href = "@{/apply/{id}(id=${apply.id})}"
-				class= "btn btn-danger">Delete</a>
+				class= "btn btn-danger">Delete</a><br>
 			
 			</td>
-		</tr>
+		</tr><br>
 		</tbody>
 		
-		</table>
+		</table><br>
 		
-		
-		
-		<div class = "row">
-		<div class = "col-lg-3">
-		<a th:href = "@{/apply/new}" class = "btn btn-primary btn-sm mb-3">Apply Now</a> 
-		</div>
-		
-		</div>
+	
 
 </body>
 </html>

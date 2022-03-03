@@ -7,7 +7,7 @@
 						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
   						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
    						crossorigin="anonymous">
-
+<link rel="shortcut icon" href="https://isra.edu.pk/storage/2015/03/logo.ico" type="image/x-icon" />
 <title>Isra University</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/apply}">s </a>
+        <a class="nav-link" th:href="@{/apply}">Edit Apply </a>
       </li>
     </ul>
   </div>
@@ -37,30 +37,30 @@
 			<div class="container">
 				<div class ="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-					<h1 class ="text-center">Update </h1>
+					<h1 class ="text-center">Update Apply </h1>
 				
 					<div class = "card-body">
 					<form th:action="@{/apply/{id} (id=${apply.id})}"  method="POST">
 					<div class="form-gorup">
-							<label></label>
+							<label>name</label>
 								<input
 								type= "text"
-								name="firstName"
-								th:field="*{firstName}"
+								name="name"
+								//th:field="*{name}"
 								class="form-control"
-								placeholder="Enter  First Name"/>
+								placeholder="Enter Name"/>
 						</div>
 
 
 
 <div class="form-gorup">
-	<label> Last Name</label>
+	<label>Father Name</label>
 	<input
 	type= "text"
-	name="lasttName"
-	th:field="*{lastName}"
+	name="f_Name"
+	th:field="*{f_Name}"
 	class="form-control"
-	placeholder="Enter  Last Name"
+	placeholder="Enter  Father Name"
 	/>
 
 </div>
@@ -69,14 +69,150 @@
 
 
 <div class="form-gorup">
-	<label> Email</label>
+	<label>Surname</label>
+	<input
+	type= "text"
+	name="surname"
+	th:field="*{surname}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/>
+	</div>
+	
+	<div class="form-gorup">
+	<label>Email</label>
 	<input
 	type= "text"
 	name="email"
 	th:field="*{email}"
 	class="form-control"
-	placeholder="Enter  Email"
+	placeholder="Enter  surname"
 	/>
+	</div>
+	
+	
+	<div class="form-gorup">
+	<label>PlaceOfBirth</label>
+	<input
+	type= "text"
+	name="PlaceOfBirth"
+	th:field="*{PlaceOfBirth}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	
+	<div class="form-gorup">
+	<label>gender</label>
+	<input
+	type= "text"
+	name="gender"
+	th:field="*{gender}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	
+	<div class="form-gorup">
+	<label>nationality</label>
+	<input
+	type= "text"
+	name="nationality"
+	th:field="*{nationality}"
+	class="form-control"
+	placeholder="Enter  nationality"
+	/></div>
+	
+	<div class="form-gorup">
+	<label>telephone</label>
+	<input
+	type= "tel"
+	name="telephone"
+	th:field="*{telephone}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	
+	<div class="form-gorup">
+	<label>mobile</label>
+	<input
+	type= "tel"
+	name="mobile"
+	th:field="*{mobile}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	
+	<div class="form-gorup">
+	<label>domicile</label>
+	<input
+	type= "text"
+	name="domicile"
+	th:field="*{domicile}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	<div class="form-gorup">
+	<label>email</label>
+	<input
+	type= "text"
+	name="email"
+	th:field="*{email}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	<div class="form-gorup">
+	<label>presentAddress</label>
+	<input
+	type= "text"
+	name="presentAddress"
+	th:field="*{presentAddress}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	<div class="form-gorup">
+	<label>parmanentAddress</label>
+	<input
+	type= "text"
+	name="parmanentAddress"
+	th:field="*{parmanentAddress}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/></div>
+	
+	<div class="form-gorup">
+	<label>Applied For</label>
+	<input
+	type= "text"
+	name="appliedFor"
+	th:field="*{appliedFor}"
+	class="form-control"
+	placeholder="Enter  surname"
+	/>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 </div>
 

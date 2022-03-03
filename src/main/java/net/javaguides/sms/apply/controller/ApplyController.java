@@ -24,10 +24,6 @@ public class ApplyController {
 	}
 	
 	
-	
-	
-	
-	
 	//handler method to handle list students and return mode and view
 	@GetMapping("/apply")
 	public String listApply(Model model) {
@@ -103,10 +99,23 @@ public class ApplyController {
 	
 	@GetMapping("/apply/{id}")
 	public String deleteApply(@PathVariable Long id) {
+		
 		applyService.deleteApplyById(id);
 		return "redirect:/apply";
 	}
 	
+	
+	
+	
+	//extra
+	
+	@GetMapping("/apply_starter")
+	public String apply_starter() {
+		return "/apply_starter";
+	}
+	
+	
+
 	
 
 }

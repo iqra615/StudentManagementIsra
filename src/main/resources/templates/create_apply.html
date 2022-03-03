@@ -29,7 +29,6 @@
       
       
       
-      
       <li class="nav-item">
         <a class="nav-link" th:href="@{/course}">Courses </a>
      
@@ -55,7 +54,7 @@
 			<div class="container">
 				<div class ="row">
 					<div class="col-lg-10 col-md-6 col-sm-6 container justify-content-center card">
-					<h1 class ="text-center">Create New Apply</h1>
+					<h1 class ="text-center">Registration Form</h1>
 				
 					<div class = "card-body">
 					<form th:action="@{/apply}" th:object="${apply}" method="POST">
@@ -73,7 +72,8 @@
 								name="name"
 								th:field="*{name}"
 								class="form-control"
-								placeholder="Enter Here"/>
+								placeholder="Enter Here"
+								required= "required"/>
 						</div>
 
 
@@ -85,7 +85,8 @@
 	                        name="f_Name"
 	                        th:field="*{f_Name}"
 	                        class="form-control"
-	                         placeholder="Enter Here"/>
+	                         placeholder="Enter Here"
+	                         required= "required"/>
 
                              </div>
                              <div class="form-gorup">
@@ -95,7 +96,8 @@
 	                          name="surname"
 	                          th:field="*{surname}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                          
 	                          
@@ -106,7 +108,8 @@
 	                          name="DateOfBirth"
 	                          th:field="*{DateOfBirth}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                          <div class="form-gorup">
 	                          <label> Place Of Birth</label>
@@ -115,8 +118,11 @@
 	                          name="PlaceOfBirth"
 	                          th:field="*{PlaceOfBirth}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
+	                          
+	                     
 	                          <div class="form-gorup">
 	                          <label> Gender</label>
 	                          <input
@@ -124,16 +130,22 @@
 	                          name="gender"
 	                          th:field="*{gender}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
-	                          
-	                          <div class="form-gorup">
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
+	             
+	             
+	             
+	             
+	             
+	              <div class="form-gorup">
 	                          <label> Nationality</label>
 	                          <input
 	                          type= "text"
 	                          name="nationality"
 	                          th:field="*{nationality}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                          <div class="form-gorup">
 	                          <label> Telephone</label>
@@ -151,7 +163,8 @@
 	                          name="mobile"
 	                          th:field="*{mobile}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                          <div class="form-gorup">
 	                          <label> Domicile</label>
@@ -160,7 +173,8 @@
 	                          name="domicile"
 	                          th:field="*{domicile}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                          <div class="form-gorup">
 	                          <label> Email</label>
@@ -169,7 +183,9 @@
 	                          name="email"
 	                          th:field="*{email}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"
+	                          /> </div>
 	                          
 	                           
 	                          <div class="form-gorup">
@@ -179,7 +195,8 @@
 	                          name="presentAddress"
 	                          th:field="*{presentAddress}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div>
 	                          
 	                           
 	                          <div class="form-gorup">
@@ -200,7 +217,8 @@
 	                          name="appliedFor"
 	                          th:field="*{appliedFor}"
 	                          class="form-control"
-	                          placeholder="Enter Here"/> </div><br>
+	                          placeholder="Enter Here"
+	                          required= "required"/> </div><br>
 	  
 	                 <div class = "box-footer">
 
