@@ -48,11 +48,11 @@ public class CourseController {
 	
 
 	
-	@PostMapping("/course")
+	@PostMapping("/Course/save")
 	public String saveCourse(@ModelAttribute("course") Course course) {
 		
 		courseService.saveCourse(course);
-		return "redirect:/course";
+		return "/course";
 			
 	}
 	
@@ -73,13 +73,6 @@ public class CourseController {
 		model.addAttribute("course",courseService.getCourseById(id));
 		return "edit_course";
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -118,20 +111,13 @@ public class CourseController {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
 	//extra
 	
 	@GetMapping("/Course/save")
 	public String createStudentForm(Model model) {
 		Course course = new Course();
 		model.addAttribute("course", course);
-		return "addcourse";
+		return "redirect:/course";
 			
 	}
 	

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import net.javaguides.sms.course.entity.Course;
 import net.javaguides.sms.course.repository.CourseRepository;
 import net.javaguides.sms.course.service.CourseService;
-import net.javaguides.sms.entity.Student;
+
 
 
 @Service
@@ -21,10 +21,10 @@ public class CourseServiceImpl implements CourseService {
 		this.courseRepository = studentRepository;
 	}
 	
-	@Override
-	public List<Course> getAllCourses() {
-		return courseRepository.findAll();
-	}
+	//@Override
+	//public List<Course> getAllCourse() {
+		//return courseRepository.findAll();
+	//}
 
 	@Override
 	public Course saveCourse(Course course) {

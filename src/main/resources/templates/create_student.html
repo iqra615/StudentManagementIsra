@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<style>
+
+
+
+p {
+  font-size: 0.55em;
+}
+
+
+
+
+
+
+</style>
 <meta charset="ISO-8859-1">
 <title>Isra University</title>
 <link rel="stylesheet" 
@@ -10,11 +24,18 @@
 <link rel="shortcut icon" href="https://isra.edu.pk/storage/2015/03/logo.ico" type="image/x-icon" />
 <title>Isra University</title>
 </head>
-<body>
+<body style="background-color:powderblue;">
 
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Isra University</a>
+   <a href="#" class="navbar-brand">
+                <img src="https://paperads.com/uploads/co_img/1522840360.jpg" height="48" alt="Isra LOGO">
+            </a>
+            
+  <a class="navbar-brand" href="#">ISRA UNIVERSITY <br> <p class = "text-INFO"> A HALLMARK OF THE FUTURE</p></a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -46,6 +67,11 @@
       </li> 
     </ul>
   </div>
+   <form class="form-inline">
+    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-success my-1 my-sm-0" type="submit">Search</button>
+  </form>
+  
 </nav>
 		<br>
 		<br>
@@ -103,6 +129,7 @@
 
 
 </form>
+
 
 </div>
 </div>

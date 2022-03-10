@@ -20,7 +20,7 @@ public interface CourseService {
 
 	List<Course> getAllCourse();
 
-	List<Course> getAllCourses();
+	//List<Course> getAllCourses();
 
 	
 

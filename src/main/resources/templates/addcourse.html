@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<style>
+
+
+
+p2 {
+  font-size: 0.55em;
+}
+
+
+
+
+
+
+</style>
 <meta charset="ISO-8859-1">
  <link rel="shortcut icon" href="https://isra.edu.pk/storage/2015/03/logo.ico" type="image/x-icon" />
 <title>Add Course</title>
@@ -8,13 +22,21 @@
 						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
   						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
    						crossorigin="anonymous">
+   						<link rel="shortcut icon" href="https://isra.edu.pk/storage/2015/03/logo.ico" type="image/x-icon" />
 </head>
 
 
-<body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<body style="background-color:powderblue;">
+
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Isra University</a>
+   <a href="#" class="navbar-brand">
+                <img src="https://paperads.com/uploads/co_img/1522840360.jpg" height="48" alt="Isra LOGO">
+            </a>
+            
+  <a class="navbar-brand" href="#">ISRA UNIVERSITY <br> <p2 class = "text-INFO"> A HALLMARK OF THE FUTURE</p2></a>
  
 
   <!-- Toggler/collapsibe Button -->
@@ -52,6 +74,10 @@
       </li> 
     </ul>
   </div>
+   <form class="form-inline">
+    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-success my-1 my-sm-0" type="submit">Search</button>
+  </form>
 </nav> <br> <br>
 
 									<div class="container">
@@ -65,30 +91,12 @@
                                 th:action="@{/Course/save}" 
                                 th:object="${course}" 
                                 method="post">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                  <div alight="left">
-            <tr>
-                <label class="form-label">Course ID</label>
-                <td>
-	                <input type="hidden"
-	                 th:field="*{id}" />
-	                <input type="text" 
-	                th:field="*{id}"
-	                 class="form-control"
-	                 placeholder="Enter Here"
-	                 name="id" />
-                </td>
-            </tr>
-         </div> 
+                              
+                                  
+  <div alight="left" ></div>
+           
+                
+        
                                 
   
          
@@ -96,8 +104,7 @@
             <tr>
                 <label class="form-label">Course Name</label>
                 <td>
-	                <input type="hidden"
-	                 th:field="*{id}" />
+
 	                <input type="text" 
 	                th:field="*{coursename}"
 	                 class="form-control"
@@ -121,11 +128,13 @@
          </div>  <br>
 <div>
             <tr>
-            <button type="submit" class="btn btn-info">Save</button> </td>
+            <button type="submit" class="btn btn-info" >Save</button> </td>
             </tr>
 
 </div>
  </form>
+
 </div>
+
 </body>
 </html>

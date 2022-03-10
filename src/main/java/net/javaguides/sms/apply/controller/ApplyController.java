@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import net.javaguides.sms.apply.entity.Apply;
 import net.javaguides.sms.apply.service.ApplyService;
 
 
 @Controller
+
 public class ApplyController {
 	
 	
@@ -52,12 +54,6 @@ public class ApplyController {
 		return "redirect:/apply";
 			
 	}
-	
-	
-	
-	
-	
-	
 	
 	@GetMapping("/apply/edit/{id}")
 	public String editApplyForm(@PathVariable Long id, Model model) {
@@ -115,7 +111,23 @@ public class ApplyController {
 	}
 	
 	
+	
+	//@GetMapping("/")
+	//public String home(Model model) {
+		
+		//model.addAttribute("email"," iqrabukhari05@gmail.com");
+		//model.addAttribute("password","123");
+		
+		//return "login";
+	//}
+	
+	
+	//@GetMapping("/login_Dashboard")
+	//public String loginDashboard() {
+		//return "login_Dashboard";
+//	}
 
+	
 	
 
 }

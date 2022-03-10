@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+<style>
+
+
+
+p {
+  font-size: 0.55em;
+}
+
+
+
+
+
+
+</style>
 <meta charset="ISO-8859-1">
 <title>Isra University</title>
 <link rel="stylesheet" 
 						href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
   						integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
    						crossorigin="anonymous">
+   						<link rel="shortcut icon" href="https://isra.edu.pk/storage/2015/03/logo.ico" type="image/x-icon" />
 </head>
-<body>
+<body style="background-color:powderblue;">
 
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Isra University</a>
+   <a href="#" class="navbar-brand">
+                <img src="https://paperads.com/uploads/co_img/1522840360.jpg" height="48" alt="Isra LOGO">
+            </a>
+            
+  <a class="navbar-brand" href="#">ISRA UNIVERSITY <br> <p class = "text-INFO"> A HALLMARK OF THE FUTURE</p></a>
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -52,6 +72,10 @@
       
     </ul>
   </div>
+   <form class="form-inline">
+    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-success my-1 my-sm-0" type="submit">Search</button>
+  </form>
 </nav>
 
 
@@ -67,41 +91,9 @@
 <h1>Registered Candidates</h1>
 
 
-
-
-
-
-
-<div class = "row">
-		<div class = "col-lg-3">
-		<a th:href = "@{/apply/new}" class = "btn btn-primary btn-sm mb-3" >Apply Now</a> 
-		</div>
-		
-		</div>
-
-
-
-
-
-
-
-
-
 <div class="container">
 									<div class="col-lg-9 col-md-6 col-sm-6 container justify-content-center card">
                               <div align="left"> <br>
-
-
-
-
-
-
-
-
-
-
-
-
 		
 <div class ="container">
 		<div class = "row"></div>
@@ -152,10 +144,175 @@
 				class= "btn btn-danger">Delete</a><br>
 			
 			</td>
-		</tr><br>
+		</tr>
 		</tbody>
 		
-		</table><br>
+		</table>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Youtube link -->	
+	
+		
+		<div class="ratio ratio-16x9">
+  <iframe src="https://isra.edu.pk/storage/2015/03/isra_advertisement1.mp4" title="YouTube video" allowfullscreen></iframe>
+		</div>
+		<!-- Youtube link -->		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">ABOUT UNIVERSITY</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://isra.edu.pk/brief-introduction-2/" class="text-dark">Brief Introduction</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/the-legal-authority/" class="text-dark">The legal Authority</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/message-from-vc/" class="text-dark">Message From VC</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/profile-of-leadership/" class="text-dark">Profile of Leadership</a>
+          </li>
+           <li>
+            <a href="https://isra.edu.pk/board-of-governers/" class="text-dark">Board of Governors</a>
+          </li>
+           <li>
+            <a href="https://isra.edu.pk/officers-of-the-university/" class="text-dark">Office Of The University</a>
+          </li>
+           <li>
+            <a href="https://isra.edu.pk/contact-us/" class="text-dark">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">ADMISSIONS</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://isra.edu.pk/admissions-2021-22/" class="text-dark">Apply Online</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/admissions-2021-22/" class="text-dark">Admissions Open 2021-22</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/study-at-isra/" class="text-dark">Study at Isra</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/study-programs/" class="text-dark">Study Programs Offered at Isra</a>
+          </li>
+          
+           <li>
+            <a href="https://isra.edu.pk/study-programs/" class="text-dark">University Hyderabad Campus</a>
+          </li>
+          
+           <li>
+            <a href="https://isra.edu.pk/undergraduate-admission-studies/" class="text-dark">Undergraduate Admission Studies</a>
+          </li>
+          
+           <li>
+            <a href="https://isra.edu.pk/interview-proforma/" class="text-dark">Interview Proforma</a>
+          </li>
+          
+           <li>
+            <a href="https://isra.edu.pk/mbbs-bds-admission-procedure-for-the-session-2021-22/" class="text-dark">MBBS & BDS Admissions Procedure 2021-22</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">OUR CAMPUSES</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://isra.edu.pk/" class="text-dark">Hyderabad Campus</a>
+          </li>
+          <li>
+            <a href="http://altibri.edu.pk/" class="text-dark">Karachi Campus</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/islamabad-campus-introduction/" class="text-dark">Islamabad Campus</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://isra.edu.pk/newsletters-october-to-december-2014/" class="text-dark">Newsletters</a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/prospective-students/financial-matters/scholarship/" class="text-dark">Scholorships</a>
+          </li>
+          <li>
+            <a href="http://www.imj.com.pk/" class="text-dark">Isra Medical Journal </a>
+          </li>
+          <li>
+            <a href="https://isra.edu.pk/#" class="text-dark">Alumni</a>
+          </li>
+          
+             <li>
+            <a href="https://isra.edu.pk/verifydsuser.php?action=signin" class="text-dark">Microsoft Dramspark</a>
+          </li>
+            <li>
+            <a href="https://isra.edu.pk/navttc-batch-3/" class="text-dark">NAVTTC</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+   University Address,Isra University,Hala Road,Hyderabad Sindh,Pakistan | Tel:(92 22) 2030181-4 Pakistan | Tel:(92 22) 2030181-4
+   
+  </div>
+  <!-- Copyright -->
+</footer>
 		
 	
 
